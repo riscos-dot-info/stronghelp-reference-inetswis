@@ -1,0 +1,5 @@
+DNSResolver_GetMXQueryAnswer  (&46015)
+#Parent DNSResolver_
+=>	R0 =	query (pointer to dnsquery)
+<=	R0 =	host (pointer to dnsquery_mx)
+	R1 =	mxcount (Int)

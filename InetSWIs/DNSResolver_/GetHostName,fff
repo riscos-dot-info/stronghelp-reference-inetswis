@@ -1,0 +1,5 @@
+DNSResolver_GetHostName  (&46021)
+#Parent DNSResolver_
+=>	R0 =	buffer (pointer to Char)
+	R1 =	size (Int)
+<=	R0 =	status (Int)

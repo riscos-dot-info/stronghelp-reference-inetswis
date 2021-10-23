@@ -1,0 +1,5 @@
+SysLog_CloseSessionLog (&4C889)
+#Parent SysLog_
+=>	R0 =	session log handle
+
+Closes a session log and appends it's data to the main log file.

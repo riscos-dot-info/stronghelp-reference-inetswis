@@ -1,0 +1,5 @@
+SysLog_NoIndent (&4C887)
+#Parent SysLog_
+=>	R0 =	pointer to log name, or session log handle
+
+Resets the indentation for a log. This should be used when your program loads if it uses <SysLog_Indent> and <SysLog_UnIndent>.

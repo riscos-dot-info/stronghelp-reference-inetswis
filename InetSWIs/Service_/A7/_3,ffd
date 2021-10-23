@@ -1,0 +1,9 @@
+Service_URI 3  (&A7)
+#Parent Service_A7
+=>	R0 =	3 (reason code)
+	R1 =	&A7 (service code)
+	R2 =	<flags=>URI_returnflags>
+	R3 =	reserved (must be 0)
+	R4 =	handle of URI
+
+This service is called by the URI handler to return a result to the initiator of a <URI_Dispatch> call. Modules should record the handle from URI_Dispatch if they request a result message.

@@ -1,0 +1,27 @@
+DNSResolver (version 1.08)
+#Prefix DNSResolver_
+#Table Columns 3
+<CacheFlush>
+<Check>
+<Dispose>
+<DnComp>
+<DnExpand>
+<GetAnswer>
+<GetAnswerRaw>
+<GetHostByAddr>
+<GetHostByName>
+<GetHostName>
+<GetMXQueryAnswer>
+<GetNSQueryAnswer>
+<GetSOAQueryAnswer>
+<MTGetHostByAddr>
+<MTGetHostByName>
+<NameServers>
+<ResDebug>
+<ResQuery>
+<ResStatus>
+<ResUseVC>
+<ShowAnswer>
+<Start>
+<Version>
+#EndTable

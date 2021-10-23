@@ -1,0 +1,8 @@
+DNSResolver_Start  (&46010)
+#Parent DNSResolver_
+=>	R0 =	pointer to address (String)
+	R1 =	address_class (Int)
+	R2 =	lookup_type (Int)
+<=	R0 =	query (pointer to dnsquery)
+
+Starts a multitasking DNS query.

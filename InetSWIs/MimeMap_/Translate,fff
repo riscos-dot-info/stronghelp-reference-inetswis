@@ -1,0 +1,20 @@
+MimeMap_Translate  (&50B00)
+#Parent MimeMap_
+=>	R0 =	input <format=>.format>
+	R1 =	filetype, or pointer to buffer
+	R2 =	output <format=>.format>
+	R3 =	output buffer, if needed
+
+<=	R0-R2 preserved
+	R3 =	result, or pointer to buffer
+
+This SWI is used to converts between RISC OS file types, MIME content types and 'dot' extensions to file names. An error will be returned if the translation cannot be performed.
+#Subpage format
+MimeMap translation formats
+Format	Name			Meaning
+#Line;Wrap off
+0	MMM_TYPE_RISCOS		Filetype as a number
+1	MMM_TYPE_RISCOS_STRING	Filetype as string
+2	MMM_TYPE_MIME		Content type as string
+3	MMM_TYPE_DOT_EXTN	Extension as string
+others	 			reserved

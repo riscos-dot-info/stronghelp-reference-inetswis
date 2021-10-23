@@ -1,0 +1,3 @@
+DNSResolver_Version  (&4601D)
+#Parent DNSResolver_
+<=	R0 =	version (Int)

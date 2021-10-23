@@ -1,0 +1,6 @@
+Object authentication value
+#wrap on
+Objects are either authenticated or unauthenticated.  Authenticated objects
+require an authentication value to be provided before their attributes are
+made visible.  An authentication value is a 32 bit integer. The
+authentication value of zero is reserved and should not be used.

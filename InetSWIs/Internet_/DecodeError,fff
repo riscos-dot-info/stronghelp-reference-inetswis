@@ -1,0 +1,6 @@
+Internet_DecodeError
+#Parent Internet_
+=>	R0 =	error number
+<=	R0 =	pointer to error message
+
+Returns a textual version of the error number given by the sockets interface.

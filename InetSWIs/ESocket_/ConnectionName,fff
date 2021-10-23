@@ -1,0 +1,6 @@
+ESocket_ConnectionName (&51C0A)
+#Parent ESocket_
+=>	R0 =	ESocket handle
+<=	R0 =	pointer to zero terminated string, or 0 if none known yet
+
+This SWI reads the name of the other end of the connection.

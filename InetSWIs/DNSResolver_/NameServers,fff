@@ -1,0 +1,6 @@
+DNSResolver_NameServers  (&46023)
+#Parent DNSResolver_
+<=	R0 =	size (Int)
+	R1 =	ns_address_list (pointer to sockaddr_in)
+
+Find out what nameservers are currently being used. This information should be treated as READ-ONLY, although you could (if careful) change these if you know what you are doing.

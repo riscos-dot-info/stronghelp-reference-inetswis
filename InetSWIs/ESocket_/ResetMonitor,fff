@@ -1,0 +1,7 @@
+ESocket_ResetMonitor (&51C0C)
+#Parent ESocket_
+=>	R0 =	EMonitor handle
+	R1 =	new pollword address, or 0 to preserve current address
+<=	R0 =	pollword address
+
+This SWI resets a monitor to zero, possibly changing its address.

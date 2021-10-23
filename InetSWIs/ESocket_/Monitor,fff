@@ -1,0 +1,22 @@
+ESocket_Monitor (&51C0B)
+#Parent ESocket_
+=>	R0 =	<type of monitor=>.monitors>
+	others dependant on type
+<=	R0 =	EMonitor handle
+
+This SWI creates a monitor. Call <ESocket_ResetMonitor> to read the pollword address.
+#subpage monitors
+ESocket_Monitor types
+Type	Meaning
+#Line
+0	<Monitor ESocket=>.type0>
+others	reserved
+#subpage type0
+ESocket_Monitor 0
+=>	R0 =	0 (Monitor ESocket)
+	R1 =	ESocket handle
+<=	R0 =	EMonitor handle
+
+Creates a monitor for a single socket.
+
+Technically it checks input and closure or socket and check keyboard and taskwindow input.

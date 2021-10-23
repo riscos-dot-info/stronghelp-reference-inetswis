@@ -1,0 +1,22 @@
+HTMLDecode_GetWord  (&4D840)
+#Parent HTMLDecode_
+=>	R0 =	pointer to input buffer
+	R1 =	length of buffer
+	R2 =	<flags=>.flags>
+
+<=	R0 =	pointer to string, or 0 if no string present
+	R1 =	length to reduce buffer by
+
+This SWI reads a single word, or tag from a stream of raw HTML data. Strings returned may be up to 512 bytes in length and are valid until the next call to HTMLDecode_GetWord. Comment tags will never be returned as these are stripped completely.
+#Subpage flags
+Flags used in HTMLDecode_GetWords
+Bit	Meaning if set
+#Line
+0	<File is complete=>.flagbit0>
+#Subpage flagbit0
+Flag bit 0 for HTMLDecode_GetWord
+In order that HTMLDecode may process files 'on the fly' whilst data is only partially available the flag word indicates whether the data in the buffer is the complete data from the server, or whether there is more to come but that it is not in the buffer at the moment.
+
+Therefore, when the end of the buffer is reached and the flag is unset then the currently processed string is abandoned and 0 returned. The buffer will have been scanned for comments and spaces and therefore R1 is valid.
+
+If the end of the buffer is reached and the flag is set then the currently processed string will be terminated and returned as the last string. Subsequent calls will return 0 indicating that the decode is complete.

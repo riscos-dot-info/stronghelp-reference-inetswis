@@ -1,0 +1,6 @@
+SysLog_GetLogLevel (&4C881)
+#Parent SysLog_
+=>	R0 =	pointer to log name, or session log handle
+<=	R0 =	<priority=>SysLog_priorities>
+
+Reads the current logging level for a particular log.

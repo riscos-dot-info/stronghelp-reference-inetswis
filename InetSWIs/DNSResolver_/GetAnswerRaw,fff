@@ -1,0 +1,7 @@
+DNSResolver_GetAnswerRaw  (&46014)
+#Parent DNSResolver_
+=>	R0 =	query (pointer to dnsquery)
+<=	R0 =	result (pointer to data)
+	R1 =	resplen (Int)
+
+Retrieves the complete unparsed DNS answer if available.

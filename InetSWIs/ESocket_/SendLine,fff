@@ -1,0 +1,15 @@
+ESocket_SendLine (&51C03)
+#Parent ESocket_
+=>	R0 =	ESocket handle
+	R1 =	pointer to zero (or CR) terminated string
+	R2 =	<flags=>.flags>
+
+This SWI sends a line of text.
+#subpage flags
+ESocket_SendLine flags
+Bit	Meaning
+#Line
+0	Don't send a CR (13)
+1	Don't send a LF (10)
+2	String is terminated by 13, not 0
+other	reserved, must be 0

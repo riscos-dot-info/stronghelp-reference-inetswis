@@ -1,0 +1,5 @@
+SysLog_UnIndent (&4C886)
+#Parent SysLog_
+=>	R0 =	pointer to log name, or session log handle
+
+Decreases the indent for the log. This is useful if you are writing long debugging routines which log according to the routine they are in. Used to undo <SysLog_Indent>.

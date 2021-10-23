@@ -1,0 +1,27 @@
+Internet SWIs
+#Parent StrongHelp:!Menu
+#Postfix _
+#Table Columns 4
+<DNSResolver>
+<Ec>
+<ESocket>
+<Freeway>
+<HTMLDecode>
+<HTTP>
+<Internet>
+<KA9QAUN>
+<Mbuf>
+<MimeMap>
+<PPPdriver>
+<Resolver>
+<RGB>
+<SLIPdriver>
+<Socket=>InetSocket:!Root>
+<SysLog>
+<URI>
+<WebFTP>
+<WebGopher>
+#EndTable
+#Line
+#align centre
+{/}<Internet SWIs manual=>about>, v1.04b1{/}

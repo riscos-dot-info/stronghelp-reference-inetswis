@@ -1,0 +1,8 @@
+DNSResolver_DnComp  (&4601F)
+#Parent DNSResolver_
+=>	R0 =	pointer to exp_dn (String)
+	R1 =	comp_dn (pointer to Char)
+	R2 =	dn_ptrs (pointer to pointer to Char)
+	R3 =	lastdnptr (pointer to pointer to Char)
+	R4 =	length (Int)
+<=	R0 =	status (Int)

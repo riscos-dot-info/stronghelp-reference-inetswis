@@ -1,0 +1,8 @@
+Internet_GetHostByName  (&46000)
+#Parent Internet_
+=>	R0 =	0
+	R1 =	pointer to host name
+<=	R0 =	pointer to error block if error, or netbsd <error number=>InetSocket:E>
+	R1 =	pointer to <hostent> structure, or 0 if not found
+
+Returns a hostent block for the requested host name. This hostent block will remain static for 24 hours after which it will expire and no longer be valid.

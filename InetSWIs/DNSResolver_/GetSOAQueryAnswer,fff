@@ -1,0 +1,5 @@
+DNSResolver_GetSOAQueryAnswer  (&46017)
+#Parent DNSResolver_
+=>	R0 =	query (pointer to dnsquery)
+<=	R0 =	host (pointer to dnsquery_soa)
+	R1 =	soacount (Int)

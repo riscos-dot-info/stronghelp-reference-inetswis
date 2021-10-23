@@ -1,0 +1,6 @@
+MimeMap
+#Parent !Root
+#Prefix MimeMap_
+<Translate>
+
+Note: Versions of the MimeMap module prior to 0.05 use an invalid SWI base. Do *NOT* use or support the older versions.

@@ -1,0 +1,6 @@
+ESocket_DecodeState (&51C0E)
+#Parent ESocket_
+=>	R0 =	<state=>ESocket_states>
+<=	R0 =	what the state is in words.
+
+Translate a ESocket state to a coherent, user readable string.

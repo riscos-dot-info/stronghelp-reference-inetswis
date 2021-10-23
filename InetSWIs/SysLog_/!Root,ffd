@@ -1,0 +1,19 @@
+SysLog
+#Parent !Root
+#Prefix SysLog_
+#Table Columns 2
+<LogMessage>
+<GetLogLevel>
+<FlushLog>
+<SetLogLevel>
+<LogUnstamped>
+<Indent>
+<UnIndent>
+<NoIndent>
+<OpenSessionLog>
+<CloseSessionLog>
+<LogData>
+<LogFormatted>
+<ReadErrorMessage>
+<LogComplete>
+#EndTable

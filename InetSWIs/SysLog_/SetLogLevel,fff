@@ -1,0 +1,6 @@
+SysLog_SetLogLevel (&4C883)
+#Parent SysLog_
+=>	R0 =	pointer to log name, or session log handle
+	R1 =	<new priority=>SysLog_priorities>
+
+Sets te logging level for a particular log or session. This call is for debugging purposes only - do not use in distributed code !

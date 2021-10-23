@@ -1,0 +1,6 @@
+URI_InvalidateURI  (&4E383)
+#Parent URI_
+=>	R0 =	flags (currently reserved)
+	R3 =	URI handle
+
+This SWI is used to mark a URI as being invalid.

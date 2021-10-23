@@ -1,0 +1,7 @@
+<Driver>_SetNetworkMTU
+#Parent !Root
+=>	R0 =	flags, reserved at present
+	R1 =	Unit number within driver
+	R2 =	Maximum Transmit Unit
+
+This SWI changes the maximum amount of data transmitable in a frame. If a driver cannot change it's MTU then it should return an error.

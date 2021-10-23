@@ -1,0 +1,16 @@
+RGB_EncodeName (&90681)
+#Parent RGB_
+=>	R0 =	&BBGGRR00 of colour
+	R1 =	<flags=>.flags>
+	R2 =	pointer to 64 byte block (128 bytes if b0 set)
+<=	R0 =	distance of returned colour from that requested, if b0 set
+	R1 =	pointer to name, or -1 if could not be matched
+
+This SWI converts a colour number into a colour name. The 'best match' rule uses the same weightings as the ColourTrans module (R=2, G=4, B=1).
+#
+#Subpage flags
+RGB_EncodeName flags
+Bit	Meaning if set
+#line
+0	find best match without resorting to #rrggbb, otherwise find exact match
+others	reserved, must be 0

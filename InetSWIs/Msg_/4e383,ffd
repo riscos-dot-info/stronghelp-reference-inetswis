@@ -1,0 +1,5 @@
+Message_URI_MReturnResult  (&4E383)
+#Parent MSG_
++ 20	<flags=>URI_returnflags>
+
+This message is sent to an application to indicate that the URI handler's success or failure in processing the specified URL.

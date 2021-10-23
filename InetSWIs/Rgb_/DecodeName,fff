@@ -1,0 +1,6 @@
+RGB_DecodeName  (&90680)
+#Parent RGB_
+=>	R0 =	pointer to colour name
+<=	R1 =	&BBGGRR00 of colour, or -1 if colour could not be found in database
+
+This SWI converts a colour name into a colour number. #rrggbb names will always work, but 'real' names require the database to be present in InetDBase:rgb.

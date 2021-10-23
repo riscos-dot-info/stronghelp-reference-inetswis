@@ -1,0 +1,20 @@
+HTTP_Open
+#Parent HTTP_
+=>	R0 =	pointer to a <hostent structure=>hostent>
+	R1 =	pointer to page to fetch, or 0 for root
+	R2 =	(some form of header data)
+	R3 =	pointer to filename to retrieve body into
+	R4 =	pointer to filename to use as posting body
+	R5 =	<flags=>.flags>
+
+This will open a HTTP connection and fetch the requested page.
+#Subpage flags
+HTTP_Open flags
+Bit	Meaning if set
+#Line
+0	Use HTTPS (if available)
+1	?
+2	Request just head
+3	?
+4	Supply 'Range' header
+others	unknown

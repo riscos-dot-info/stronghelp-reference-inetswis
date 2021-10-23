@@ -1,0 +1,13 @@
+SLIPdriver
+#Parent !Root
+#Prefix SLIPdriver_
+#Table Columns 2
+Start
+Up
+Down
+Send
+Version
+MTU
+TxEvReq
+StaNumReq
+#EndTable

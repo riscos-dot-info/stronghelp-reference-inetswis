@@ -1,0 +1,79 @@
+Internet SWIs manual
+#Align Centre
+{fh3}Internet SWIs manual{f}
+#Align Left
+#Line
+This manual is part of a collection comprising the main public domain programming reference. The other manuals in the series are :
+#Indent 2
+#Postfix :!Root
+<OS>		The base operating system stuff
+<Wimp>		The desktop part of the operating system
+<InetSWIs>	Internet based SWIs
+<InetSocket>	Internet socket calls
+<MiscSWIs>	Miscellaneous SWIs
+<VDU>		VDU commands
+<Toolbox>	Toolbox (by Neil Bingham)
+#Indent
+
+For comments, suggestions and submissions for these, please mail iain truskett <\<koschei@eh.org\>=>#URL mailto:koschei@eh.org> who is currently moderating the collection. The primary location for these manuals will be <http://freenet.barnet.ac.uk/manuals/=>#URL http://freenet.barnet.ac.uk/manuals/>.
+
+Click <here=>.hist104> for history information.
+#
+#Subpage hist100
+History for InetSWIs v1.00
+#Align Right
+{/}22 Sep 1997{/}
+#Align Left
+è	First release
+
+<Next=>.hist101>
+#
+#Subpage hist101
+History for InetSWIs v1.01
+#Align Right
+{/}15 Nov 1997{/}
+#Align Left
+è	Added DNSResolver documents (Dave Thomas)
+è	Fixed broken MimeMap module docs at Carl Elkins advice
+è	Changed link to InetSocket rather than Inet
+è	Updated URI handler documentation to release 8 of the specification. Moved the Services and Messages to this manual to try to keep relevant bits together.
+
+#tab
+<Previous=>.hist100>	<Next=>.hist102>
+#
+#Subpage hist102
+History for InetSWIs v1.02
+#Align Right
+{/}22 Jan 1998{/}
+#Align Left
+è	Sections of DCI 4 specification added (and removed because they are unreleasable)
+
+#tab
+<Previous=>.hist101>	<Next=>.hist103>
+#
+#Subpage hist103
+History for InetSWIs v1.03
+#Align Right
+{/}03 May 1998-?{/}
+#Align Left
+è	EasySockets documentation added
+# Beta 1
+è	Added 'notfound_{/}manual{/}' pages, for StrongHelp 2.60.
+
+#tab
+<Previous=>.hist102>	<Next=>.hist104>
+#
+#Subpage hist104
+History for InetSWIs v1.04
+#Align Right
+{/}25th April, 1999{/}
+#Align Left
+è	Moderator now iain truskett
+è	<EasySockets=>ESocket_> SWI numbers added.
+è	<ESocket_DecodeState> added.
+# beta 1
+è	<Freeway=>Freeway_> added.
+è	<MimeMap_Translate> spelling correction. (gerph)
+
+#tab
+<Previous=>.hist103>

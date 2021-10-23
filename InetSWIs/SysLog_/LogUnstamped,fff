@@ -1,0 +1,7 @@
+SysLog_LogUnstamped (&4C884)
+#Parent SysLog_
+=>	R0 =	pointer to log name, or session log handle
+	R1 =	pointer to text to log
+	R2 =	<priority=>SysLog_priorities>
+
+Writes a message to a log file /without/ stamping it with the time and date. This should usually be required - use <SysLog_LogMessage> in preference to this.

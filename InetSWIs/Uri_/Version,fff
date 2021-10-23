@@ -1,0 +1,6 @@
+URI_Version  (&4E380)
+#Parent URI_
+=>	R0 =	flags (currently reserved)
+\<=	R0 =	current version * 100
+
+This SWI is used to find the version of the URI module.

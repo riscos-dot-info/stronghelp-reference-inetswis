@@ -1,0 +1,11 @@
+Device Information Blocks
+Offset	Contents
+#Line
+0	SWI base for interface
+4	Pointer to the interface name
+8	unit number
+12	pointer to hardware address (6 bytes)
+16	pointer to module name
+20	pointer to description of interface location
+24	<slot number=>.slot>
+28	flags ?

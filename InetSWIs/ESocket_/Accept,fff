@@ -1,0 +1,13 @@
+ESocket_Accept (&51C09)
+#Parent ESocket_
+=>	R0 =	ESocket handle
+	R1 =	<flags=>.flags>
+<=	R0 =	new ESocket handle, or error <state=>ESocket_states>
+
+This SWI accepts a connection if there is one.
+#subpage flags
+ESocket_Accept flags
+Bit	Meaning if set
+#Line
+0	close listening socket after accepting
+other	reserved, must be 0

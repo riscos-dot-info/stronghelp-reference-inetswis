@@ -1,0 +1,9 @@
+Internet_GetHostByAddr (&46001)
+#Parent Internet_
+=>	R0 =	0
+	R1 =	pointer to host address
+	R2 =	length of address
+	R3 =	type of address
+<=	R1 =	pointer to <hostent> structure, or 0 if not found
+
+Returns a hostent block for the requested host address.

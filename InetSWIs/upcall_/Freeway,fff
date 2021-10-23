@@ -1,0 +1,26 @@
+UpCall_Freeway (UpCall 12)
+#parent OS:OS_Upcall
+{f25}Þ{f}	R0 =	12 (reason code)
+	R1 =	Freeway reason code
+	 	0 =	object added
+	 	1 =	object removed
+	 	2 =	object attributes have changed
+	 	3 =	local object deleted by Freeway
+	R2 =	<object type=>Freeway_typenumber>
+	R3 !	<object name=>Freeway_objectname>
+	R4 =	length of object descriptor
+	R5 !	<object descriptor=>Freeway_objectdesc>
+	R6 =	IP address of device which holds or held this object.
+
+{f25}Ü{f}	Registers preserved
+#line;tab;wrap on
+Warns that an object has been added or changed, removed (by the holder), or
+deleted (by Freeway).
+
+This call warns controlling applications that the named object has been
+added, removed or changed. It is also issued when <Freeway=>Freeway_> has detected that
+the information held about a locally held object is unreliable, (as a result
+of possible temporary name duplication, for example) and has removed it
+unilaterally.  It is issued on callback, and the contents of the supplied
+name and descriptor buffers are guaranteed not to change provided they are
+read from within the application's UpCall handler.

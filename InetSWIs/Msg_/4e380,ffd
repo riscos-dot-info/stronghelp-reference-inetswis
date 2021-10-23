@@ -1,0 +1,5 @@
+Message_URI_MStarted  (&4E380)
+#Parent Wimp:MSG_
++ 20	flags (currently reserved)
+
+This message is broadcast to indicate that the URI handler has started.

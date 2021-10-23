@@ -1,0 +1,8 @@
+DNSResolver_DnExpand  (&46020)
+#Parent DNSResolver_
+=>	R0 = pointer to msg (String)
+	R1 = pointer to eomsg (String)
+	R2 = pointer to comp_dn (String)
+	R3 = exp_dn (pointer to Char)
+	R4 = length (Int)
+<=	R0 = status (Int)

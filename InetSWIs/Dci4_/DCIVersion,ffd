@@ -1,0 +1,6 @@
+<Driver>_DCIVersion
+#Parent !Root
+=>	R0 =	flags, reserved at present
+	R1 =	DCI version supported
+
+This SWI returns the DCI version supported by a device driver.

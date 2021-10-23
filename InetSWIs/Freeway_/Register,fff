@@ -1,0 +1,32 @@
+Freeway_Register (&47a80)
+#parent Freeway_
+{f25}Þ{f}	R0 =	<flags=>.flags>
+	R1 =	<type number=>Freeway_typenumber>
+	R2 =	<authentication value=>Freeway_objectauth> if R0 bit 1 is set, otherwise undefined
+	R3 !	type 'name' if <R0 bit 2=>.flags> is set, otherwise undefined
+
+{f25}Ü{f}	All registers preserved
+#line;wrap on
+Register or deregister interest in objects of a given Freeway type.
+
+This SWI enables a controlling application to register interest in
+authenticated or unauthenticated objects of a particular Freeway type with
+the local Freeway software, and also to give a 'name' to that type (this
+name is of no significance to the software, it's just for the convenience of
+the human user). Freeway will hold information arriving from the network
+about a remote object only if one or more registrations of interest have
+been made locally in that object's type.  If the object is authenticated
+then at least one of those registrations must have included an
+authentication value which matches the object's own. An error is returned
+if insufficient free memory exists.
+#
+#subpage flags
+Freeway_Register R0 Flags
+/bit/	/meaning/
+0	0 -	register interest
+	1 -	deregister interest
+1	0 -	interested in unauthenticated objects
+	1 -	interested in authenticated objects
+2	0 -	R3 not valid
+	1 -	R3 {f25}Þ{f} type 'name' ({f25}£{f}15 characters, 0 terminated)
+3-31	reserved - must be set to 0

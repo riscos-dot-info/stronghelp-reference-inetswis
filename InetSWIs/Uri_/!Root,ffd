@@ -1,0 +1,24 @@
+URI
+#Parent !Root
+#Prefix URI_
+#Table Columns 4
+<Version>
+<Dispatch>
+<RequestURI>
+<InvalidateURI>
+#EndTable
+
+Message calls :
+#Indent 4
+#Table Columns 2
+<4E380 URI_MStarted=>msg_4E380>
+<4E381 URI_MDying=>msg_4E381>
+<4E382 URI_MProcess=>msg_4E382>
+<4E383 URI_MReturnResult=>msg_4E383>
+<4E384 URI_MProcessAck=>msg_4E384>
+#EndTable
+
+#Indent
+Service call :
+#Indent 4
+<A7 URI=>Service_A7>

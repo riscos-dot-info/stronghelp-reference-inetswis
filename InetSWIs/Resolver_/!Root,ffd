@@ -1,0 +1,9 @@
+Resolver
+#Parent !Root
+#Prefix Resolver_
+#Table Columns 2
+<GetHostByName>
+<GetHost>
+GetCache
+CacheControl
+#EndTable

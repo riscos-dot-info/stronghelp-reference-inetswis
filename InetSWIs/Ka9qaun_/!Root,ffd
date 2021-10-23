@@ -1,0 +1,13 @@
+KA9QAUN
+#Parent !Root
+#Prefix KA9QAUN_
+#Table Columns 2
+NetworkIfStart
+NetworkIfUp
+NetworkIfDown
+NetworkIfSend
+DCIVersion
+NetworkMTU
+TxEventRequired
+StaNumReq
+#EndTable

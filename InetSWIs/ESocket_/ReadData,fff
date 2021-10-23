@@ -1,0 +1,8 @@
+ESocket_ReadData (&51C06)
+#Parent ESocket_
+=>	R0 =	ESocket handle
+	R1 =	pointer to buffer
+	R2 =	length of buffer, or -ve to read size needed
+<=	R2 =	length read, or waiting
+
+This SWI reads a block of data

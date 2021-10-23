@@ -1,0 +1,14 @@
+Type number
+#wrap on
+This is a 16-bit integer identifying a Freeway type.  The following type
+numbers are allocated to Acorn Access+.  (Informal names with no
+significance in software will also be allocated, for easier human reference)
+
+#indent 5
+	1 =	Discs
+	2 =	Printers
+	5 =	Hosts
+#indent
+
+In Acorn Access, ShareFS is the controlling application for types Discs and
+Hosts, and !Printers is the controlling application for type Printers.

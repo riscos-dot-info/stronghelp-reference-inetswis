@@ -1,0 +1,24 @@
+<Driver>_Inquire
+#Parent !Root
+=>	R0 =	flags, reserved at present
+	R1 =	Unit number within driver
+<=	R2 =	supported <feature flags=>.flags>
+
+This SWI returns the particular features that a driver has.
+#Subpage flags
+Driver flags
+Bit	Meaning if set
+#Line
+0	Supports multicast reception
+1	Supports promiscuous recption (incorrectly addressed packets)
+2	Interface may receive packets from itself
+3	Station number is needed
+4	Interface may receive erroneous packets
+5	Hardware address is valid (world unique)
+6	Hardware address may change
+7	Interface is point to point
+8	Driver can supply standard statistics
+9	Driver can supply extended statistics
+10	This is a virtual interface
+11	This is a software based virtual interface (implies b10)
+Others	reserved, must be 0

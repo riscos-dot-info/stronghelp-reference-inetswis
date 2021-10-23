@@ -1,0 +1,16 @@
+Resolver_GetHost  (&46001)
+#Parent Resolver_
+=>	R0 =	pointer to zero-terminated host name
+<=	R0 =	pointer to error block if error, <error number=>.errors>
+	R1 =	pointer to <hostent> structure if successful, or 0 otherwise
+
+This SWI will either return a host entry if one is cached or begin a lookup if not. This call should be used for multi-tasking lookups. <EINPROGRESS=>InetSocket:EINPROGRESS> will be returned if the lookup is still in progress.
+#subpage errors
+Resolver_GetHost errors
+Number	Meaning
+#line
+\>0	<Standard socket error number=>InetSocket:E>
+	usually this will be <EINPROGRESS=>InetSocket:EINPROGRESS> (36)
+0	No error
+-1	Host not found
+-2	Resolve failure (eg didn't respond)

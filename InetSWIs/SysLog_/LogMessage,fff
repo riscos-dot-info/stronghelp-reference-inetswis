@@ -1,0 +1,7 @@
+SysLog_LogMessage (&4C880)
+#Parent SysLog_
+=>	R0 =	pointer to log name, or session log handle
+	R1 =	pointer to text to log
+	R2 =	<priority=>SysLog_priorities>
+
+Logs a message in a named system log or session log (see <SysLog_OpenSessionLog>).

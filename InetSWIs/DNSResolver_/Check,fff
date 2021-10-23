@@ -1,0 +1,6 @@
+DNSResolver_Check  (&46011)
+#Parent DNSResolver_
+=>	R0 =	query (pointer to dnsquery)
+<=	R0 =	status (dns_status)
+
+Checks the progress of a multitasking DNS query.

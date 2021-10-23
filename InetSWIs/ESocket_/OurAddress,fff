@@ -1,0 +1,7 @@
+ESocket_OurAddress (&51C0D)
+#Parent ESocket_
+=>	R0 =	ESocket handle
+<=	R0 =	local socket IP
+	R1 =	local socket port
+
+This SWI reads the address and port allocated to a socket.Note that if you are listening the ip is not likely to be 'correct'.

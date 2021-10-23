@@ -1,0 +1,6 @@
+DNSResolver_MTGetHostByAddr  (&46019)
+#Parent DNSResolver_
+=>	R0 =	pointer to address (data)
+	R1 =	address_size (Int)
+	R2 =	address_type (Int)
+<=	R0 =	query (pointer to dnsquery)

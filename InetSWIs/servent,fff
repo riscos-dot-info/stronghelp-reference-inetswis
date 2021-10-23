@@ -1,0 +1,23 @@
+Service entry block
+The servent block is as defined in unix C.
+
+Offset	Contents
+#Line
+0	pointer to official name of service
+4	pointer to <aliases list=>.aliases> for the service, or 0 if none.
+8	port number
+12	pointer to name of protocol
+
+Or, in C :
+#Indent 2
+#Wrap Off;fCode;Tab fCode,fCode
+struct servent \{
+  char *s_name;		/* Official name of service */
+  char **s_aliases;	/* Alternative names for service */
+  int  s_port;		/* Port number to use */
+  char *s_proto;	/* Protocol to use */
+\};
+#
+#Subpage aliases
+Service aliases list
+The aliases list consists of a 0-terminated list of pointers to the alias names. The list, like the servent block itself, is not static.

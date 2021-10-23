@@ -1,0 +1,10 @@
+Mbuf
+#Parent !Root
+#Prefix Mbuf_
+#Table Columns 2
+OpenSession
+CloseSession
+Memory
+Statistic
+Control
+#EndTable

@@ -1,0 +1,8 @@
+ESocket_SendData (&51C05)
+#Parent ESocket_
+=>	R0 =	ESocket handle
+	R1 =	pointer to buffer
+	R2 =	length of buffer
+<=	R0 =	amount of data sent
+
+This SWI sends a block of data.

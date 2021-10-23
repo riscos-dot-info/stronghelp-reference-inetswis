@@ -1,0 +1,13 @@
+ESocket_Closed (&51C07)
+#Parent ESocket_
+=>	R0 =	ESocket handle
+	R1 =	<flags=>.flags>
+<=	R0 =	1 if closed, 0 if not
+
+This SWI checks to see if a socket has been closed.
+#subpage flags
+ESocket_Closed flags
+Bit	Meaning if set
+#Line
+0	ignore data in the buffer
+other	reserved, must be 0

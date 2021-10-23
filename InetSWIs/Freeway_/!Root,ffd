@@ -1,0 +1,20 @@
+Freeway
+#parent !Root
+#prefix Freeway_
+<Register>	0x47A80
+<Write>		0x47A81
+<Read>		0x47A82
+<Enumerate>	0x47A83
+Status		0x47A84
+<Serial>	0x47A85
+#line
+*Services*
+<95 Service_FreewayStarting=>Service_95>
+<96 Service_FreewayTerminating=>Service_96>
+#line
+*Notes*
+<Refresh Interval=>Freeway_refresh>
+<Type number=>Freeway_typenumber>
+<Object name=>Freeway_objectname>
+<Object descriptor=>Freeway_objectdesc>
+<Object authentication value=>Freeway_objectauth>

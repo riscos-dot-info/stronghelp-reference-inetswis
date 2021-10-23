@@ -1,0 +1,7 @@
+ESocket_ConnectToHost (&51C00)
+#Parent ESocket_
+=>	R0 =	pointer to host name
+	R1 =	port number
+<=	R0 =	ESocket handle
+
+Initiates a connection to a host. To check that the connection has succeeded use <ESocket_CheckState>.

@@ -1,0 +1,6 @@
+ESocket_CheckState (&51C01)
+#Parent ESocket_
+=>	R0 =	ESocket handle
+<=	R0 =	<state=>ESocket_states>
+
+This SWI checks a sockets state.

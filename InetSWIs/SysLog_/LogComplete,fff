@@ -1,0 +1,5 @@
+SysLog_LogComplete (&4C88D)
+#Parent SysLog_
+=>	R0 =	pointer to log name
+
+Flushes the named log and de-allocates the space set aside for it. Only call this if your application is about to begin a long idle state.

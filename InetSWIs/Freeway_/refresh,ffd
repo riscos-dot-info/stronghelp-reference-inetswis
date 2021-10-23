@@ -1,0 +1,9 @@
+Refresh interval
+#wrap on
+The Freeway software in each computer will periodically re-notify other
+computers about unauthenticated objects which are held by the local machine,
+so that they know that the objects continue to be accessible. This permits,
+for example,  other machines to know when a computer holding Freeway objects
+has been powered down. The  renotification period is called the "refresh
+interval", and is determined by the Freeway software and is typically 30
+seconds.

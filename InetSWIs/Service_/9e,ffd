@@ -1,0 +1,11 @@
+Service_DCIFrameTypeFree (&9E)
+#Parent OS:Service_
+=>	R0 =	pointer to <Driver Info Block=>dci4_dib>
+	R1 =	&9E (reason code)
+	R2 =	frame type
+	R3 =	address level
+	R4 =	error level
+	
+<=	R1 =	0 if the frame has been reclaimed by another module
+
+This service is issued by the Internet module (or equivilent) when it relinquishes a frame type filter.

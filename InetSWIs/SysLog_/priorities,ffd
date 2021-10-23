@@ -1,0 +1,4 @@
+SysLog priorities
+SysLog allows you to give each message in the log a 'priority level'. The user can set the level at which the messages stop being logged so that only certain information is actually logged.
+
+The lower the priority the more important the message is, the higher the priority the more like debugging output it is. By default the logs start at level 124 and only messages below this are logged.

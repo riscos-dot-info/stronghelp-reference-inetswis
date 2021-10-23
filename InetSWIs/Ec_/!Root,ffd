@@ -1,0 +1,12 @@
+Ec
+#Parent !Root
+#Prefix Ec_
+#Table Columns 2
+Start
+Up
+Down
+Send
+Version
+MTU
+TxEvReq
+#EndTable

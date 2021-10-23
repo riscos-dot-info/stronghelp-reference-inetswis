@@ -1,0 +1,19 @@
+Slot number
+#Parent DCI4_dib
+Bits	Contents
+#Line
+0-7	<slot id=>.id>
+8-15	minor slot id, eg multiple devices per slot
+16-20	pcmcia slot number, or 0 if not
+21-31	reserved, must be 0
+#
+#subpage id
+Slot ids
+Slot	Meaning
+#Line
+0-7	Expansion podules
+8	Network Interface Connection
+128	Parallel port
+129	Serial port
+130	Econet socket
+131	PCMCIA

@@ -1,0 +1,7 @@
+Internet_GetServicesMenu
+#Parent Internet_
+=>	R0 =	pointer to name of item to tick, or 0 for none
+	R1 =	pointer to protocol name, or 0 for default
+<=	R0 =	pointer to menu structure
+
+Creates a menu structure of services which are currently known.

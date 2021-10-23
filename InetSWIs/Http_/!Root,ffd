@@ -1,0 +1,12 @@
+HTTP
+#Parent !Root
+#Prefix HTTP_
+#Table Columns 2
+<Open>
+Status
+Close
+MapToRISCOS
+MapFromRISCOS
+SetFileType
+CompletedPart
+#EndTable

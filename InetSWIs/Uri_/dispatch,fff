@@ -1,0 +1,25 @@
+URI_Dispatch  (&4E381)
+#Parent URI_
+=>	R0 =	<flags=>.flags>
+	R1 =	pointer to 0 terminated URI
+	R2 =	source task handle if b0 set, or 0 otherwise
+\<=	R0 =	<return flags=>.return>
+	R2 =	task handle of URI handler
+	R3 =	URI handle
+
+This SWI is used by an application to check the validity of, or access a URI. The task will be informed of the result by wimp message <URI_MReturnResult=>Msg_4E383>, or service call <URI_ReturnResult=>Service_A7>.
+#Subpage flags
+URI_Dispatch flags
+bit	meaning if set
+#Line
+0	inform caller of result (R2 valid)
+1	just check (b0 must be set), if unset process
+2	don't attempt external process startup
+3-31	reserved (must be 0)
+
+#Subpage return
+URI_Dispatch return flags
+bit	meaning if set
+#Line
+0	request was rejected, URI won't be dispatched
+1-31	reserved (must be 0)

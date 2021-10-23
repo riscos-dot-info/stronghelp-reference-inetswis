@@ -1,0 +1,11 @@
+Service_URI 2  (&A7)
+#Parent Service_A7
+=>	R0 =	2 (reason code)
+	R1 =	&A7 (service code)
+	R2 =	<flags=>URI_processflags>
+	R3 =	pointer to URI string
+	R4 =	URI handle
+
+<=	R1 =	0 if claimed
+
+This service is called when the URI handler is attempting to process or check a URI. Modules should check the URI for validity and if recognised and processing was requested call <URI_RequestURI> and claim the service. If processing was not requested, then claiming the service is all that is required.

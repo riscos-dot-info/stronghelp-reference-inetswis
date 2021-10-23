@@ -1,0 +1,19 @@
+Service_URI (&A7)
+#Parent OS:Service_
+=>	R0 =	<reason code=>.reason>
+	R1 =	&A7
+	others dependant on reason code
+
+<=	R1 =	0 if claimed; else preserved
+	others dependant on reason code
+
+This service is called by the <URI=>URI_> module to provide an interface for modules providing URI handling capabilities.
+#
+#subpage reason
+Service_URI reason codes
+Reason	Meaning
+#Line
+0	<Handler starting=>Service_A7_0>
+1	<Handler dying=>Service_A7_1>
+2	<Process or check URI=>Service_A7_2>
+3	<Return a result=>Service_A7_3>

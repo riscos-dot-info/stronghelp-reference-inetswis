@@ -1,0 +1,25 @@
+Host entry block
+The hostent block is as defined in unix C. The addresses given are in network byte order (the reverse of normal Acorn words).
+
+Offset	Contents
+#Line
+0	pointer to primary name of host
+4	pointer to a block of pointers to alias names for the host
+8	address type
+12	address length
+16	pointer to a list of addresses for host
+
+Or, in C :
+#Indent 2
+#Wrap Off;fCode;Tab fCode,fCode
+struct hostent \{
+  char *h_name;	/* Official name of host */
+  char **h_aliases;	/* Alternative names for host */
+  int  h_addrtype;	/* Host address type */
+  int  h_length;	/* Length of each address */
+  char **h_addr_list;	/* List of addresses for host */
+\#define h_addr h_addr_list[0]	/* Address, for back compatability */
+\};
+
+#wrap;f;Indent 0
+In BASIC you will usually want to use !!(hostent!16).

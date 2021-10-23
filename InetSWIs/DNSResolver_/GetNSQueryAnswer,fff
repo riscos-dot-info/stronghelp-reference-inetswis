@@ -1,0 +1,5 @@
+DNSResolver_GetNSQueryAnswer  (&46016)
+#Parent DNSResolver_
+=>	R0 =	query (pointer to dnsquery)
+<=	R0 =	host (pointer to dnsquery_ns)
+	R1 =	nscount (Int)

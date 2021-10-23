@@ -1,0 +1,9 @@
+SysLog_LogData (&4C88A)
+#Parent SysLog_
+=>	R0 =	session log handle
+	R1 =	<priority=>SysLog_priorities>
+	R2 =	pointer to the data
+	R3 =	number of bytes to log
+	R4 =	base offset of block, or -1 for none.
+
+Writes a data block to a log file in a similar form to *Dump. Attempts to log data blocks bigger than 10K will be faulted for your own good.

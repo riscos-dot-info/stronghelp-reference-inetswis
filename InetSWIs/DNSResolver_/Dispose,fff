@@ -1,0 +1,5 @@
+DNSResolver_Dispose  (&46012)
+#Parent DNSResolver_
+=>	R0 =	query-handle 
+
+Terminates & disposes of a multitasking DNS query.

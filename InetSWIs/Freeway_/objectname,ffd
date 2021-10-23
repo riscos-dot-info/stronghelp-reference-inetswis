@@ -1,0 +1,9 @@
+Object name
+#wrap on
+This is the name of an object.
+
+An object name is unique within the set of objects of the same type within a
+site. Object names are terminated by a control character (and will return a
+terminator of zero on output), case independent, alphanumeric strings,
+created by users or application software. Maximum length is 64 bytes,
+including the terminator.

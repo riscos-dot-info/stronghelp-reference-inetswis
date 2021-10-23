@@ -1,0 +1,8 @@
+HTMLDecode
+#Parent !Root
+#Prefix HTMLDecode_
+#Table Columns 2
+<GetWord>
+<GetAttribute>
+<MoveBytes>
+#EndTable

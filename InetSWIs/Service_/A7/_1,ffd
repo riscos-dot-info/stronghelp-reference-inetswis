@@ -1,0 +1,7 @@
+Service_URI 1  (&A7)
+#Parent Service_A7
+=>	R0 =	1 (reason code)
+	R1 =	&A7 (service code)
+	R2 =	flags (currently reserved)
+
+This service is called when the URI handler is about to die. It's use is undefined.

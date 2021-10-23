@@ -1,0 +1,16 @@
+ESocket states
+#Parent ESocket_
+State	Meaning
+#Line
+1	Trying to look up address
+2	Trying to connect
+3	Listening
+4	Connected and usable
+-1	Host lookup failed (no such host)
+-2	Resolver failure (no response)
+-3	Resolver error (not running)
+-4	No sockets left
+-5	Host is unreachable
+-6	Connection refused
+-7	Bind error (someone is already listening)
+-8	Nobody has connected (to a listening socket)

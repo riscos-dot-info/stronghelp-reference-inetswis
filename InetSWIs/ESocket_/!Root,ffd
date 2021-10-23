@@ -1,0 +1,20 @@
+EasySockets
+#Parent !Root
+#Prefix ESocket_
+#table Columns 2
+<ConnectToHost>
+<CheckState>
+<Forget>
+<SendLine>
+<ReadLine>
+<SendData>
+<ReadData>
+<Closed>
+<Listen>
+<Accept>
+<ConnectionName>
+<Monitor>
+<ResetMonitor>
+<OurAddress>
+<DecodeState>
+#endtable

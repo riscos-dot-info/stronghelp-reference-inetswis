@@ -1,0 +1,7 @@
+DNSResolver_GetHostByName  (&46000)
+#Parent DNSResolver_
+=>	R0 =	&0
+	R1 =	pointer to hostname (Char)
+<=	R1 =	host (pointer to hostent)
+
+Looks up the host information as for gethostbyname(3).

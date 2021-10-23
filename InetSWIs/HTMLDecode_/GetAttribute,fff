@@ -1,0 +1,9 @@
+HTMLDecode_GetAttrib  (&4D841)
+#Parent HTMLDecode_
+=>	R0 =	pointer to string of attributes
+
+<=	R0 =	pointer to rest of string; after attribute
+	R1 =	capitalised attribute name, or 0 if none left
+	R2 =	value of attribute, or 0 if none given
+
+This SWI should be called for tags, after the tag itself has been removed. This should simplify the decoding of HTML attributes.

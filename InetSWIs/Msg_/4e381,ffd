@@ -1,0 +1,7 @@
+Message_URI_MDying  (&4E381)
+#Parent Wimp:Msg_
++ 20	flags (currently reserved)
+
+This message is broadcast to indicate that the URI handler is about to die.
+
+In Justin's implementation this call may not always be sent.

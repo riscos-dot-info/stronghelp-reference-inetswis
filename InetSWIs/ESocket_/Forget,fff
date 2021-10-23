@@ -1,0 +1,5 @@
+ESocket_Forget (&51C02)
+#Parent ESocket_
+=>	R0 =	ESocket or EMonitor handle
+
+This SWI closes and forgets about a socket or monitor.

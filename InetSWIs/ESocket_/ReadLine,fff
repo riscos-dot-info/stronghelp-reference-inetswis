@@ -1,0 +1,22 @@
+ESocket_ReadLine (&51C04)
+#Parent ESocket_
+=>	R0 =	ESocket handle
+	R1 =	pointer to buffer
+	R2 =	length of buffer, or -ve to read size needed
+	R3 =	<flags=>.flags>
+<=	R1 =	pointer to buffer, or 0 if nothing was read
+	R2 =	length read or available
+
+This SWI reads a line of text.
+#subpage flags
+ESocket_ReadLine flags
+Bit	Meaning
+#Line
+0-1	Terminator to use :
+	 0	CR LF
+	 1	LF
+	 2	CR
+	 3	either CR or LF
+2	String should be terminated by 13, not 0
+3	String should be pre-processed for deletes
+other	reserved, must be 0

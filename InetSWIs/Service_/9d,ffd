@@ -1,0 +1,12 @@
+Service_DCIDriverStatus (&9D)
+#Parent OS:Service_
+=>	R0 =	pointer to <Driver Info Block=>dci4_dib>
+	R1 =	&9D (reason code)
+	R2 =	status (0 if starting, 1 if terminating)
+	R3 =	DCI version supported
+	
+<=	All registers preserved, never claimed
+
+This service is issued by a driver when it starts or exits.
+
+This call should *never* be claimed.

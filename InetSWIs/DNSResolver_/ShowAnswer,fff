@@ -1,0 +1,7 @@
+DNSResolver_ShowAnswer  (&4601E)
+#Parent DNSResolver_
+=>	R0 =	pointer to response (data)
+	R1 =	buffer (pointer to Char)
+	R2 =	size (pointer to Int)
+	R3 =	answer length (Int)
+<=	R0 =	status (Int)

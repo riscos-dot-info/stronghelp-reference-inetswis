@@ -1,0 +1,6 @@
+ESocket_Listen (&51C08)
+#Parent ESocket_
+=>	R0 =	port number
+<=	R0 =	ESocket handle, or error <state=>esocket_states>
+
+This SWI creates a socket listening on a port.

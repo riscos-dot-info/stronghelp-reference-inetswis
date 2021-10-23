@@ -1,0 +1,12 @@
+URI_RequestURI  (&4E382)
+#Parent URI_
+=>	R0 =	flags (currently reserved)
+	R1 =	pointer to buffer for URI, or 0 to read size
+	R2 =	length of buffer
+	R3 =	URI handle
+
+\<=	R2 =	offset of terminating null, or size if R1 was 0.
+
+This SWI is used by an application or module to find the size of a the URI or to copy it into it's buffer and accept that it will handle it.
+
+Note: If you cannot handle the size of the buffer returned then there is no way to notify the module that this is the case and thus release memory.

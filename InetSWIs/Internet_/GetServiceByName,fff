@@ -1,0 +1,7 @@
+Internet_GetServiceByName
+#Parent Internet_
+=>	R0 =	service name
+	R1 =	protocol, or 0 for default protocol (tcp)
+<=	R1 =	pointer to <servent> structure, or 0 if not found
+
+Returns a servent block for the requested service. This is not guarenteed to remain static and should only be considered valid until the next call.

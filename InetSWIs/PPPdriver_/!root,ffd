@@ -1,0 +1,10 @@
+PPPdriver
+#table columns 2
+DCIVersion
+Inquire
+GetNetworkMTU
+SetNetworkMTU
+Transmit
+Filter
+Stats
+#endtable

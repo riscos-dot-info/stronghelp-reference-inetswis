@@ -1,0 +1,20 @@
+Internet
+#Parent !Root
+#Prefix Internet_
+InetServices :
+#Indent 2
+#Table Columns 2
+<GetServiceByName>
+<GetServiceByPort>
+<DecodeError>
+<GetServicesMenu>
+#EndTable
+
+#Indent 0
+InetDB :
+#Indent 2
+#Table Columns 2
+<GetHostByName>
+<GetHostByAddr>
+#EndTable
+#Indent

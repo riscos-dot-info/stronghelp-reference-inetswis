@@ -1,0 +1,7 @@
+Service_URI 0  (&A7)
+#Parent Service_A7
+=>	R0 =	0 (reason code)
+	R1 =	&A7 (service code)
+	R2 =	flags (currently reserved)
+
+This service is called when the URI handler is started. It's use is undefined.

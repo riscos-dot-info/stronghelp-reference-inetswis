@@ -1,0 +1,6 @@
+SysLog_ReadErrorMessage (&4C88C)
+#Parent SysLog_
+=>	R0 =	error number
+<=	R0 =	pointer to error message
+
+Decodes the errors returned by the stack into English strings.

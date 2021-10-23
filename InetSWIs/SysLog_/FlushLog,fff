@@ -1,0 +1,5 @@
+SysLog_FlushLog (&4C882)
+#Parent SysLog_
+=>	R0 =	pointer to log name, session log handle, or 0 to flush all
+
+Writes out any cached data from memory to the logs and closes the files.

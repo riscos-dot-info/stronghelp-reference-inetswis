@@ -1,0 +1,9 @@
+DNSResolver_GetHostByAddr  (&46001)
+#Parent DNSResolver_
+=>	R0 =	&0
+	R1 =	pointer to address (data)
+	R2 =	address_size (Int)
+	R3 =	address_type (Int)
+<=	R1 =	host (pointer to hostent)
+
+Looks up the host information as for gethostbyaddr(3).

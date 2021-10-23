@@ -1,0 +1,47 @@
+Freeway_Enumerate (SWI &47a83)
+#parent Freeway_
+{f25}Þ{f}	R0 =	<flags=>.flags>
+	R1 =	Freeway <type number=>Freeway_typenumber>
+	R2 =	length of buffer for <object name=>Freeway_objectname>
+	R3 !	buffer for <object name=>Freeway_objectname>, or 0
+	R4 =	length of buffer for <object descriptor=>Freeway_objectdesc>
+	R5 !	buffer for <object descriptor=>Freeway_objectdesc>, or 0
+	R6 =	0 or undefined
+	R7 =	enumeration reference (0 to start)
+	R8 =	<authentication value=>Freeway_objectauth> if R0 bit 0 is set, otherwise undefined
+
+{f25}Ü{f}	R0 - R1	preserved
+	R2 =	length of held <object name=>Freeway_objectname>, including 0 terminator
+	R3	preserved
+	R4 =	length of held <object descriptor=>Freeway_objectdesc>
+	R5	preserved
+	R6 =	IP address of computer which holds the object
+	R7 =	next enumeration reference, or -1 to indicate end reached
+	R8 =	preserved
+#line;tab;wrap on
+Enumerate objects of a given type.
+
+This SWI allows a controlling application to enumerate currently held
+authenticated or unauthenticated objects of a given type, obtaining their
+names, location IP addresses, and descriptors if present.  If an
+<authentication value=>Freeway_objectauth> is provided then only those objects whose actual
+<authentication value=>Freeway_objectauth> matches the supplied value are enumerated. If no
+<authentication value=>Freeway_objectauth> is supplied then only unauthenticated objects are
+enumerated. The length of the held <object name=>Freeway_objectname> or descriptor may be read
+without filling in buffers by setting R3=0 or R5=0 respectively, on entry.
+However in this case there is no guarantee that the object attributes will
+not have changed, or that the object will still exist, if the SWI is called
+again some time later with the same enumeration reference.
+
+If R7 is returned -1 then there were no further known objects of that type 
+- the <object name=>Freeway_objectname> buffer will not have been filled in, and R6 is undefined.
+
+An error is returned if the <type number=>Freeway_typenumber> is unknown, or if a supplied name or
+descriptor buffer is too short. In the latter cases the actual name and
+descriptor lengths are returned in R2 and R4.
+#
+#subpage flags
+/bit/	/meaning/
+0	0 =	enumerate unauthenticated objects only
+	1 =	enumerate authenticated objects only
+1-31	reserved - must be set to 0

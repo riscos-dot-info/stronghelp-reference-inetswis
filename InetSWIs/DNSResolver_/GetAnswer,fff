@@ -1,0 +1,6 @@
+DNSResolver_GetAnswer  (&46013)
+#Parent DNSResolver_
+=>	R0 =	query (pointer to dnsquery)
+<=	R0 =	host (pointer to hostent)
+
+Retrieves the DNS answer as a hostent structure if available.

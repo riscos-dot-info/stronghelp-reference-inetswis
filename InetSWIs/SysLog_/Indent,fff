@@ -1,0 +1,5 @@
+SysLog_Indent (&4C885)
+#Parent SysLog_
+=>	R0 =	pointer to log name, or session log handle
+
+Increases the indent for the log. This is useful if you are writing long debugging routines which log according to the routine they are in. Use <SysLog_UnIndent> to reverse this.

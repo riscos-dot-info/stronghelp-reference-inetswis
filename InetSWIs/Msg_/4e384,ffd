@@ -1,0 +1,7 @@
+Message_URI_MProcessAck  (&4E384)
+#Parent Wimp:Msg_
++ 20	<flags=>URI_processflags>
++ 24	pointer to URI string
++ 28	URI handle
+
+This message is returned to indicate to the URI handler that a client can claim or process a given URI and to stop it being passed to other applications.

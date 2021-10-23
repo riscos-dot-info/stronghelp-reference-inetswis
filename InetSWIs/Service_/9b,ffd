@@ -1,0 +1,18 @@
+Service_EnumerateNetworkDrivers (&9B)
+#Parent OS:Service_
+=>	R0 =	current head of list
+	R1 =	&9B (reason code)
+
+<=	R0 =	new head of list
+
+This service is usually called by the Internet module, but may be called from any module wishing the discover the current interfaces. Interfaces should <chain themselves=>.chain> on to the current head.
+
+This call should *never* be claimed.
+#Subpage chain
+Network drivers information block chain
+Offset	Contents
+#Line
+0	Pointer to next chained entry, or 0 if none
+4	Pointer to <device info block=>dci4_dib>
+
+These blocks are allocated in RMA by the device drivers. It is up to the program issuing the service to free the space.

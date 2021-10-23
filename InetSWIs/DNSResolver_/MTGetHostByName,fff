@@ -1,0 +1,4 @@
+DNSResolver_MTGetHostByName  (&46018)
+#Parent DNSResolver_
+=>	R0 =	pointer to hostname (String)
+<=	R0 =	query (pointer to dnsquery)

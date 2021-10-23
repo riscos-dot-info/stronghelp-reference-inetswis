@@ -1,0 +1,8 @@
+DNSResolver_ResQuery  (&46022)
+#Parent DNSResolver_
+=>	R0 =	pointer to address (String)
+	R1 =	address_class (Int)
+	R2 =	lookup_type (Int)
+	R3 =	pointer to answer buffer (pointer to Char)
+	R4 =	size (Int)
+<=	R0 =	length (Int)

@@ -1,0 +1,7 @@
+SysLog_OpenSessionLog (&4C888)
+#Parent SysLog_
+=>	R0 =	pointer to log name
+	R1 =	priority
+<=	R0 =	session log handle, or 0 if the logs will be ignored
+
+Opens a session log file with a particular priority. Session logs can be used to group particular events together so that they appear consecutively in the log file. Use <SysLog_CloseSessionLog> to end a session.

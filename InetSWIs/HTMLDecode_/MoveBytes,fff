@@ -1,0 +1,7 @@
+HTMLDecode_MoveBytes  (&4D842)
+#Parent HTMLDecode_
+=>	R0 =	pointer to source address
+	R1 =	pointer to destination address
+	R2 =	length of data
+
+This SWI should be to move a queue of data down in memory. The idea is that you call this to move the data down in a continuous buffer so that you can read parts of a file in, parse it and then load more. A very simple copy is performed - the source should be above the destination if the areas overlap.

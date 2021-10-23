@@ -1,0 +1,15 @@
+Object descriptor
+#wrap on
+This provides extra information about the object.
+
+Its format is undefined at this level - it has significance to higher-level
+application software. Object descriptors are arrays of bytes of any value,
+maximum length 255.
+
+In Acorn Access+ the descriptor for type Discs indicates whether a disc is
+shared protected or unprotected, or as a CDROM or subdirectory, and visible
+or invisible to other desktop users.
+
+The descriptor for type Printers is a 'Printer Type' string.
+
+The descriptor for type Hosts is null.
