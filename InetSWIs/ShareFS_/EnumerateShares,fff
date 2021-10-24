@@ -1,0 +1,26 @@
+ShareFS_EnumerateShares  (&47ac2)
+#Parent ShareFS_
+{f25}Þ{f}	R0 =	<flags=>.flags>
+	R4 =   context value (0 for first time)
+{f25}Ü{f}	R1 =	pointer to object's share name
+	R2 =	pointer to path name of shared object
+	R3 =	shared object <flags=>ShareFS_CreateShare-flags>
+	R4 =	updated context value (-1 for no more found; R1,R2 undefined)
+	Other registers preserved
+
+This SWI enumerates the shares that are active on the local machine.
+#
+#SubPage flags
+ShareFS_EnumerateShares Flags
+/Bit/	/Meaning when set/
+#line
+0	enumerate protected objects only
+1	enumerate read only objects only
+2	enumerate hidden objets only
+3	enumerate sub-directory objects only
+4	enumerate CD ROM objects only
+5-30	reserved - should be 0
+31	enumerate only objects matching bit 0-4 criteria and having an
+	authentication value matching that passed in R5 on entry
+
+Only one bit out of 0-4 should be set.

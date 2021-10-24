@@ -1,0 +1,11 @@
+ShareFS_CreateShare Flags
+#parent ShareFS_CreateShare
+/Bit/	/Meaning when set/
+#line
+0	share object as protected
+1	share object as read only
+2	share object as hidden (no icon)
+3	share object as authenticated sub-directory
+4	share object as CD ROM
+5	share object as authenticated CD ROM
+6-31	reserved - should be 0

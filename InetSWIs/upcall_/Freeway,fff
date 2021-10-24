@@ -7,9 +7,9 @@ UpCall_Freeway (UpCall 12)
 	 	2 =	object attributes have changed
 	 	3 =	local object deleted by Freeway
 	R2 =	<object type=>Freeway_typenumber>
-	R3 !	<object name=>Freeway_objectname>
+	R3 =	pointer to <object name=>Freeway_objectname>
 	R4 =	length of object descriptor
-	R5 !	<object descriptor=>Freeway_objectdesc>
+	R5 =	pointer to <object descriptor=>Freeway_objectdesc>
 	R6 =	IP address of device which holds or held this object.
 
 {f25}Ü{f}	Registers preserved

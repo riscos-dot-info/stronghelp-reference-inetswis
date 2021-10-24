@@ -15,6 +15,7 @@ Internet SWIs
 <PPPdriver>
 <Resolver>
 <RGB>
+<ShareFS>
 <SLIPdriver>
 <Socket=>InetSocket:!Root>
 <SysLog>
@@ -24,4 +25,4 @@ Internet SWIs
 #EndTable
 #Line
 #align centre
-{/}<Internet SWIs manual=>about>, v1.04b1{/}
+{/}<Internet SWIs manual=>about>, v1.05{/}

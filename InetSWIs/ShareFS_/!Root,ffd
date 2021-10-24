@@ -1,0 +1,6 @@
+ShareFS
+#parent !Root
+#prefix ShareFS_
+<CreateShare>
+<EnumerateShares>
+<StopShare>

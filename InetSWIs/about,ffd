@@ -17,7 +17,7 @@ This manual is part of a collection comprising the main public domain programmin
 
 For comments, suggestions and submissions for these, please mail iain truskett <\<koschei@eh.org\>=>#URL mailto:koschei@eh.org> who is currently moderating the collection. The primary location for these manuals will be <http://freenet.barnet.ac.uk/manuals/=>#URL http://freenet.barnet.ac.uk/manuals/>.
 
-Click <here=>.hist104> for history information.
+Click <here=>.hist105> for history information.
 #
 #Subpage hist100
 History for InetSWIs v1.00
@@ -76,4 +76,16 @@ History for InetSWIs v1.04
 è	<MimeMap_Translate> spelling correction. (gerph)
 
 #tab
-<Previous=>.hist103>
+<Previous=>.hist103>	<Next=>.hist105>
+#
+#Subpage hist105
+History for InetSWIs v1.05
+#Align Right
+{/}26th November, 1999{/}
+#Align Left
+è	<ShareFS=>ShareFS_> added.
+è	<Freeway upcall=>upcall_Freeway> updated.
+è	<Service InternetStatus=>Service_B0> added.
+
+#tab
+<Previous=>.hist104>

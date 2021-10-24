@@ -1,0 +1,6 @@
+Service_InternetStatus (&B0)
+#parent OS:service_index
+=>	R0 =	reason code
+	R1 =	pointer to interface name
+	R3 =	pointer to DIB
+	Other registers dependant upon reason code.
