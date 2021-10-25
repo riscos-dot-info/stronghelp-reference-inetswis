@@ -1,13 +1,6 @@
 ShareFS_StopShare  (&47ac1)
 #Parent ShareFS_
-{f25}Þ{f}	R0 =	<flags=>.flags>
+=>	R0 =	flags (all reserved, SBZ)
 	R1 =	pointer to name that object is shared as
-{f25}Ü{f}	All registers preserved
 
 This SWI stop sharing an object.
-#
-#SubPage flags
-ShareFS_StopShare Flags
-/Bit/	/Meaning when set/
-#line
-0-31	reserved - should be 0

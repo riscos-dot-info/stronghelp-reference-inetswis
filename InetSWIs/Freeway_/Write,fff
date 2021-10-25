@@ -1,15 +1,13 @@
 Freeway_Write (&47a81)
 #parent Freeway_
-{f25}Þ{f}	R0 =	<flags=>.flags>
+=>	R0 =	<flags=>.flags>
 	R1 =	Freeway <type number=>freeway_typenumber>
-	R2 !	object name, 0 terminated
+	R2 =	pointer to object name, 0 terminated
 	R3 =	length of object descriptor
-	R4 !	<object descriptor=>Freeway_objectdesc>, or R4 = 0 for null descriptor or when <R0 bit 0=>.flags> is set
-	R5 =	<object authentication value=>Freeway_objectauth> if <R0 bit 1=>.flags> is set, otherwise undefined
-{f25}Ü{f}	All registers preserved
-#line;wrap on;tab
-Add or remove an object of a given type.
+	R4 =	pointer to <object descriptor=>Freeway_objectdesc>, or 0 for none or when flags bit 0 is set
+	R5 =	<object authentication value=>Freeway_objectauth> if flags bit 1 is set, otherwise undefined
 
+#wrap on;tab
 This SWI adds or removes a locally held object of a given type. If the
 object is unauthenticated then other computers are notified immediately,
 otherwise notification is withheld until a remote computer requests it.  An
@@ -19,22 +17,22 @@ remote object of the given name and type already exists, or if an object is
 removed and no local object of the given name and type is currently held, or
 if no memory exists to store information about the object.
 
-If <R0 bit 0=>.flags> is set and the object named is already held as a local object,
+If flags bit 0 is set and the object named is already held as a local object,
 the object's descriptor and authentication value are updated if they differ
 from those passed to the SWI.
 
-*Note*:	Controlling applications should be prepared to receive upcall
+Controlling applications should be prepared to receive
 UpCall_Freeway, reason code object deleted, referring to
-any object previously added successfully via SWI <Freeway_Write>. This is to
-cover the possibility of Freeway deciding at any time that the information
+any object previously added successfully. This is to
+cover the possibility of Freeway deciding that the information
 held about an object is unreliable and so deciding to remove it
-unilaterally, for any reason, e.g. if a remote object is created with the
+unilaterally, e.g. if a remote object is created with the
 same name as a local object.
 #
 #subpage flags
 Freeway_Write R0 Flags
-/bit/	/meaning/
-0	0 -	add object
-	1 -	remove object
-1	1 -	object is authenticated
+/bit/	/meaning when set/
+#line
+0	remove object (otherwise add)
+1	object is authenticated
 2-31	reserved - must be set to 0

@@ -1,9 +1,7 @@
 Service_FreewayStarting (&95)
 #parent OS:Service_
-{f25}Þ{f}	R1 =	&95 (reason code)
-	R2 =	flags
-	 	/bit/	/meaning/
-	 	0-31	reserved - must be set to 0
-{f25}Ü{f}	R1	preserved to pass on (must not be claimed)
-#line
+=>	R1 =	&95 (reason code)
+	R2 =	flags (all reserved, SBZ)
+<=	R1 preserved (must not be claimed)
+
 Freeway is starting up.

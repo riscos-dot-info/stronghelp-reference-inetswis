@@ -1,30 +1,28 @@
 Freeway_Read (&47a82)
 #parent Freeway_
-{f25}Þ{f}	R0 =	<flags=>.flags>
+=>	R0 =	<flags=>.flags>
 	R1 =	Freeway <type number=>Freeway_typenumber>
-	R2 !	<object name=>Freeway_objectname>, 0 terminated
+	R2 =	pointer to <object name=>Freeway_objectname>, 0 terminated
 	R3 =	length of buffer for <object descriptor=>Freeway_objectdesc>
-	R4 !	buffer for <object descriptor=>Freeway_objectdesc>, or 0
+	R4 =	pointer to buffer for object descriptor, or 0
 	R5 =	<authentication value=>Freeway_objectauth> if present, otherwise undefined
-{f25}Ü{f}	R0 - R2	preserved
-	R3 =	length of held object descriptor
-	R4	preserved
+<=	R3 =	length of held object descriptor
 	R5 =	IP address of computer which holds the object
-#line;tab;wrap on
-Read attributes of an object.
 
-This SWI reads information about the attributes of an object. The type
-number and object name must be provided. The SWI returns the IP address of
-the holder, and optionally the descriptor. The length of a held <object
-descriptor=>Freeway_objectdesc> may be read by setting R4=0 on entry. However in this case there
-is no guarantee that the object attributes will not have changed, or that
-the object will still exist, if the SWI is called again some time later with
-the same <object name=>Freeway_objectname>.  An error is returned if the <type number=>Freeway_typenumber> is unknown,
-or the object name is unknown, or if a supplied <authentication value=>Freeway_objectauth> does
-not match the object's own authentication value, or if a supplied <object
-descriptor=>Freeway_objectdesc> buffer is too short;  in this case the actual length is returned
-in R3.
-#
+#tab;wrap on
+This SWI reads information about the attributes of an object. The type number
+and object name must be provided. The SWI returns the IP address of the
+holder, and optionally the descriptor. The length of a held <object descriptor=>Freeway_objectdesc>
+may be read by setting R4 to 0 on entry. However
+in this case there is no guarantee that the object attributes will not have
+changed, or that the object will still exist, if the SWI is called again some
+time later.
+
+An error is returned if the type number is unknown, or the object name is
+unknown, or if a supplied authentication value does not match the object's
+own authentication value, or if a supplied object descriptor buffer is too
+short;  in this case the actual length is returned in R3.
+# 
 #subpage flags
 /bit/	/meaning/
 0	1 =	authentication value provided

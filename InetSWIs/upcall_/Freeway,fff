@@ -1,6 +1,6 @@
 UpCall_Freeway (UpCall 12)
 #parent OS:OS_Upcall
-{f25}Þ{f}	R0 =	12 (reason code)
+=>	R0 =	12 (reason code)
 	R1 =	Freeway reason code
 	 	0 =	object added
 	 	1 =	object removed
@@ -12,8 +12,7 @@ UpCall_Freeway (UpCall 12)
 	R5 =	pointer to <object descriptor=>Freeway_objectdesc>
 	R6 =	IP address of device which holds or held this object.
 
-{f25}Ü{f}	Registers preserved
-#line;tab;wrap on
+#wrap on
 Warns that an object has been added or changed, removed (by the holder), or
 deleted (by Freeway).
 

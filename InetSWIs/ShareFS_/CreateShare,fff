@@ -1,10 +1,10 @@
 ShareFS_CreateShare  (&47ac0)
 #Parent ShareFS_
 #prefix ShareFS_CreateShare-
-{f25}Þ{f}	R0 =	<flags>
+=>	R0 =	<flags>
 	R1 =	pointer to name to share object as
 	R2 =	pointer to the directory pathname to share
 	R3 =	authentication value (only applies if flags bit 3 or 5 set)
-{f25}Ü{f}	All registers preserved
+<=	All registers preserved
 
 This SWI creates a shared object, and makes is accessible to other machines.

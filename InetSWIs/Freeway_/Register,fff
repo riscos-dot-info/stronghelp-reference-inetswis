@@ -1,12 +1,11 @@
 Freeway_Register (&47a80)
 #parent Freeway_
-{f25}Þ{f}	R0 =	<flags=>.flags>
+=>	R0 =	<flags=>.flags>
 	R1 =	<type number=>Freeway_typenumber>
-	R2 =	<authentication value=>Freeway_objectauth> if R0 bit 1 is set, otherwise undefined
-	R3 !	type 'name' if <R0 bit 2=>.flags> is set, otherwise undefined
+	R2 =	<authentication value=>Freeway_objectauth> if flags bit 1 is set
+	R3 =	pointer to type name if flags bit 2 is set
 
-{f25}Ü{f}	All registers preserved
-#line;wrap on
+#wrap on
 Register or deregister interest in objects of a given Freeway type.
 
 This SWI enables a controlling application to register interest in
@@ -28,5 +27,5 @@ Freeway_Register R0 Flags
 1	0 -	interested in unauthenticated objects
 	1 -	interested in authenticated objects
 2	0 -	R3 not valid
-	1 -	R3 {f25}Þ{f} type 'name' ({f25}£{f}15 characters, 0 terminated)
+	1 -	R3 is pointer to type name (fewer than 16 characters)
 3-31	reserved - must be set to 0

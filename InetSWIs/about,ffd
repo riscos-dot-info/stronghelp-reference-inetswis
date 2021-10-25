@@ -12,12 +12,14 @@ This manual is part of a collection comprising the main public domain programmin
 <InetSocket>	Internet socket calls
 <MiscSWIs>	Miscellaneous SWIs
 <VDU>		VDU commands
-<Toolbox>	Toolbox (by Neil Bingham)
+<Toolbox>	Toolbox
 #Indent
 
-For comments, suggestions and submissions for these, please mail iain truskett <\<koschei@eh.org\>=>#URL mailto:koschei@eh.org> who is currently moderating the collection. The primary location for these manuals will be <http://freenet.barnet.ac.uk/manuals/=>#URL http://freenet.barnet.ac.uk/manuals/>.
+Thanks go to those mentioned in the <contributors=>OS:contributions> list.
 
-Click <here=>.hist105> for history information.
+For comments, suggestions and submissions for these, please mail Christian Ludlam <christian@recoil.org=>#url mailto:christian@recoil.org> who is currently moderating the collection. These manuals will continue to be available from <http://sudden.recoil.org/stronghelp/=>#url>.
+
+<This page=>.hist106> gives history and credits.
 #
 #Subpage hist100
 History for InetSWIs v1.00
@@ -25,8 +27,8 @@ History for InetSWIs v1.00
 {/}22 Sep 1997{/}
 #Align Left
 è	First release
-
-<Next=>.hist101>
+#line
+<Next history=>.hist101>
 #
 #Subpage hist101
 History for InetSWIs v1.01
@@ -37,9 +39,8 @@ History for InetSWIs v1.01
 è	Fixed broken MimeMap module docs at Carl Elkins advice
 è	Changed link to InetSocket rather than Inet
 è	Updated URI handler documentation to release 8 of the specification. Moved the Services and Messages to this manual to try to keep relevant bits together.
-
 #tab
-<Previous=>.hist100>	<Next=>.hist102>
+<Previous history=>.hist100>	<Next history=>.hist102>
 #
 #Subpage hist102
 History for InetSWIs v1.02
@@ -47,9 +48,8 @@ History for InetSWIs v1.02
 {/}22 Jan 1998{/}
 #Align Left
 è	Sections of DCI 4 specification added (and removed because they are unreleasable)
-
-#tab
-<Previous=>.hist101>	<Next=>.hist103>
+#tab;line
+<Previous history=>.hist101>	<Next history=>.hist103>
 #
 #Subpage hist103
 History for InetSWIs v1.03
@@ -59,9 +59,8 @@ History for InetSWIs v1.03
 è	EasySockets documentation added
 # Beta 1
 è	Added 'notfound_{/}manual{/}' pages, for StrongHelp 2.60.
-
-#tab
-<Previous=>.hist102>	<Next=>.hist104>
+#tab;line
+<Previous history=>.hist102>	<Next history=>.hist104>
 #
 #Subpage hist104
 History for InetSWIs v1.04
@@ -74,9 +73,8 @@ History for InetSWIs v1.04
 # beta 1
 è	<Freeway=>Freeway_> added.
 è	<MimeMap_Translate> spelling correction. (gerph)
-
-#tab
-<Previous=>.hist103>	<Next=>.hist105>
+#tab;line
+<Previous history=>.hist103>	<Next history=>.hist105>
 #
 #Subpage hist105
 History for InetSWIs v1.05
@@ -86,6 +84,15 @@ History for InetSWIs v1.05
 è	<ShareFS=>ShareFS_> added.
 è	<Freeway upcall=>upcall_Freeway> updated.
 è	<Service InternetStatus=>Service_B0> added.
+#tab;line
+<Previous history=>.hist104>	<Next history=>.hist106>
+#Subpage hist106
+History for InetSWIs v1.06
+#Align Right
+{/}7th January 2006{/}
+#Align Left
 
-#tab
-<Previous=>.hist104>
+è	Moderator now Christian Ludlam
+è	Minor updates.
+#tab; line
+<Previous history=>.hist105>
