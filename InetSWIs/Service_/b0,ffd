@@ -1,6 +1,16 @@
 Service_InternetStatus (&B0)
 #parent OS:service_index
-=>	R0 =	reason code
-	R1 =	pointer to interface name
+=>	R0 =	subreason
+	 	0 - 	address changed
+	 	1 - 	net map changed
+	 	2 - 	interface up/down
+	 	3 - 	dynamic boot start
+	 	4 - 	dynamic boot reply
+	 	5 - 	dynamic boot offer
+	 	6 - 	dynamic boot request
+	 	7 - 	dynamic boot inform
+	 	8 - 	duplicate IP address seen
+	R1 =	&B0 (reason code)
+	R2 =	pointer to interface name
 	R3 =	pointer to DIB
 	Other registers dependant upon reason code.

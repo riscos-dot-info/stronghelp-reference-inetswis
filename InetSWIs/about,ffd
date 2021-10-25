@@ -17,9 +17,9 @@ This manual is part of a collection comprising the main public domain programmin
 
 Thanks go to those mentioned in the <contributors=>OS:contributions> list.
 
-For comments, suggestions and submissions for these, please mail Christian Ludlam <christian@recoil.org=>#url mailto:christian@recoil.org> who is currently moderating the collection. These manuals will continue to be available from <http://sudden.recoil.org/stronghelp/=>#url>.
-
-<This page=>.hist106> gives history and credits.
+These manuals are kindly hosted by <www.riscos.info=>#url http://www.riscos.info/downloads/stronghelp/manuals/>
+#line
+Click <here=>.hist107> for history information.
 #
 #Subpage hist100
 History for InetSWIs v1.00
@@ -27,8 +27,8 @@ History for InetSWIs v1.00
 {/}22 Sep 1997{/}
 #Align Left
 è	First release
-#line
-<Next history=>.hist101>
+
+<Next=>.hist101>
 #
 #Subpage hist101
 History for InetSWIs v1.01
@@ -39,8 +39,9 @@ History for InetSWIs v1.01
 è	Fixed broken MimeMap module docs at Carl Elkins advice
 è	Changed link to InetSocket rather than Inet
 è	Updated URI handler documentation to release 8 of the specification. Moved the Services and Messages to this manual to try to keep relevant bits together.
+
 #tab
-<Previous history=>.hist100>	<Next history=>.hist102>
+<Previous=>.hist100>	<Next=>.hist102>
 #
 #Subpage hist102
 History for InetSWIs v1.02
@@ -48,8 +49,9 @@ History for InetSWIs v1.02
 {/}22 Jan 1998{/}
 #Align Left
 è	Sections of DCI 4 specification added (and removed because they are unreleasable)
-#tab;line
-<Previous history=>.hist101>	<Next history=>.hist103>
+
+#tab
+<Previous=>.hist101>	<Next=>.hist103>
 #
 #Subpage hist103
 History for InetSWIs v1.03
@@ -59,8 +61,9 @@ History for InetSWIs v1.03
 è	EasySockets documentation added
 # Beta 1
 è	Added 'notfound_{/}manual{/}' pages, for StrongHelp 2.60.
-#tab;line
-<Previous history=>.hist102>	<Next history=>.hist104>
+
+#tab
+<Previous=>.hist102>	<Next=>.hist104>
 #
 #Subpage hist104
 History for InetSWIs v1.04
@@ -73,8 +76,9 @@ History for InetSWIs v1.04
 # beta 1
 è	<Freeway=>Freeway_> added.
 è	<MimeMap_Translate> spelling correction. (gerph)
-#tab;line
-<Previous history=>.hist103>	<Next history=>.hist105>
+
+#tab
+<Previous=>.hist103>	<Next=>.hist105>
 #
 #Subpage hist105
 History for InetSWIs v1.05
@@ -84,15 +88,30 @@ History for InetSWIs v1.05
 è	<ShareFS=>ShareFS_> added.
 è	<Freeway upcall=>upcall_Freeway> updated.
 è	<Service InternetStatus=>Service_B0> added.
-#tab;line
-<Previous history=>.hist104>	<Next history=>.hist106>
+
+#tab
+<Previous=>.hist104>	<Next=>.hist106>
+#
 #Subpage hist106
 History for InetSWIs v1.06
 #Align Right
 {/}7th January 2006{/}
 #Align Left
-
 è	Moderator now Christian Ludlam
 è	Minor updates.
-#tab; line
-<Previous history=>.hist105>
+
+#tab
+<Previous=>.hist105>	<Next=>.hist107>
+#
+#Subpage hist107
+History for InetSWIs v1.07
+#Align Right
+{/}29 Sep 2018{/}
+#Align Left
+è	<Service DCI protocol status=>Service_9F> added.
+è	<Service Internet status=>Service_B0> subreasons added.
+è	List of <MimeMap translate types=>MimeMap_Translate.format> expanded.
+è	Changed hosting link to www.riscos.info
+
+#tab
+<Previous=>.hist106>

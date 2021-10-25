@@ -1,0 +1,13 @@
+Service_DCIProtocolStatus (&9F)
+#Parent OS:Service_
+=>	R0 =	protocol module's private word pointer
+	R1 =	&9F (reason code)
+	R2 =	status (0 if starting, 1 if terminating)
+	R3 =	DCI version supported
+	R4 =	protocol module's title string
+	
+<=	All registers preserved, never claimed
+
+This service is issued by a protocol module when it starts or exits.
+
+This call should *never* be claimed.

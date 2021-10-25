@@ -1,6 +1,6 @@
 Service_URI (&A7)
 #Parent OS:Service_
-=>	R0 =	<reason code=>.reason>
+=>	R0 =	<subreason code=>.reason>
 	R1 =	&A7
 	others dependant on reason code
 

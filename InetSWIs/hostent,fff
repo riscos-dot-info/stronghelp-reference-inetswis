@@ -18,8 +18,9 @@ struct hostent \{
   int  h_addrtype;	/* Host address type */
   int  h_length;	/* Length of each address */
   char **h_addr_list;	/* List of addresses for host */
-\#define h_addr h_addr_list[0]	/* Address, for back compatability */
+\#define h_addr h_addr_list[0]	/* Address, for back compatibility */
 \};
 
 #wrap;f;Indent 0
-In BASIC you will usually want to use !!(hostent!16).
+The list of host addresses is terminated by a NULL pointer.
+In BASIC you will usually want to use !!(hostent!16) to use the first in the list.

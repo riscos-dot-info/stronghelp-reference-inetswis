@@ -8,4 +8,4 @@ Service_DCIFrameTypeFree (&9E)
 	
 <=	R1 =	0 if the frame has been reclaimed by another module
 
-This service is issued by the Internet module (or equivilent) when it relinquishes a frame type filter.
+This service is issued by the Internet module (or equivalent) when it relinquishes a frame type filter.

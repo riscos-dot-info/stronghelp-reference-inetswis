@@ -3,12 +3,15 @@ MimeMap_Translate  (&50B00)
 =>	R0 =	input <format=>.format>
 	R1 =	filetype, or pointer to buffer
 	R2 =	output <format=>.format>
-	R3 =	output buffer, if needed
+	R3 =	filetype, or pointer to buffer
 
 <=	R0-R2 preserved
 	R3 =	result, or pointer to buffer
+	R4 =	number of 'dot' extensions known for output type MMM_TYPE_DOT_EXTNS else preserved
 
-This SWI is used to converts between RISC OS file types, MIME content types and 'dot' extensions to file names. An error will be returned if the translation cannot be performed.
+This SWI is used to convert between RISC OS file types, MIME content types and 'dot' extensions to file names. An error will be returned if the translation cannot be performed.
+
+Note: Versions of the MimeMap module prior to 0.05 used an invalid SWI number for this SWI. Do *NOT* use or support the older versions.
 #Subpage format
 MimeMap translation formats
 Format	Name			Meaning
@@ -17,4 +20,6 @@ Format	Name			Meaning
 1	MMM_TYPE_RISCOS_STRING	Filetype as string
 2	MMM_TYPE_MIME		Content type as string
 3	MMM_TYPE_DOT_EXTN	Extension as string
+4	MMM_TYPE_MAC	Apple Macintosh type/creator pair as string
+5	MMM_TYPE_DOT_EXTNS	Array of pointers to extensions (output format only)
 others	 			reserved
