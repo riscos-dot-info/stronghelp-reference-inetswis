@@ -2,7 +2,7 @@
 #
 # This file is part of the StrongHelp InetSWIs Reference Manual collection:
 #
-#   https://github.com/riscos-dot-info/stronghelp-reference-inetsocket
+#   https://github.com/riscos-dot-info/stronghelp-reference-inetswis
 
 # This file is included by the Makefile in the main StrongHelp Manuals
 # project, to assemble the manuals on Linux using the BindHelp utility.
